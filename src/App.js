@@ -51,7 +51,7 @@ function App() {
   const deleteFriend=(id)=>{
     axios.delete(`https://mern-begginer.herokuapp.com/delete/${id}`).then(()=>{
       setListOfFriends(listOfFriends.filter((val)=>{
-        return val._id !==id;
+        return val._id !=id;
       }))
     })
   }
